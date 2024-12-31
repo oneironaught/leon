@@ -75,6 +75,11 @@ html {
 }
 
 /* Footer */
+.footer {
+    background-color: #0c5aa8;
+    padding: 20px;
+    text-align: center;
+}
 .footer p {
     font-size: 0.9rem;
 }

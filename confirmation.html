@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 </head>
 <body>
-    
+
     <!-- Main Content (Navbar + Other Sections) -->
     <section id="main-content">
         <!-- Navbar -->
@@ -34,9 +34,24 @@
         </nav>
     </section>
 
-<!--Confirmation-->    
-<h1 class="text-center mt-5">Thank You for Your Purchase!</h1>
-<p class="text-center">Your order has been confirmed.</p>
-<div class="text-center container my-5">
-    <a href="shop.html" class="btn btn-primary">Back to Shop</a>
-</div>
+    <!-- Confirmation Message -->
+    <div class="container text-center my-5">
+        <h1>🎉 Thank You for Your Purchase!</h1>
+        <p>Your order has been successfully placed.</p>
+        <a href="shop.html" class="btn btn-primary mt-4">Continue Shopping</a>
+    </div>
+
+    <!-- Clear Cart Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Clear the cart from localStorage
+            localStorage.removeItem('cart');
+            // Update cart count if available
+            const cartCountElement = document.getElementById('cart-count');
+            if (cartCountElement) {
+                cartCountElement.innerText = '0';
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>

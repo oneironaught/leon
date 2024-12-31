@@ -49,23 +49,43 @@
         </nav>
     </section>
 
-     <!-- Gallery Section -->
-        <section id="gallery" class="gallery-section py-5 bg-light">
-            <div class="container text-center">
-                <h2 class="fw-bold mb-4">Explore Our Collection</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <img src="images/gallery1.jpg" class="img-fluid rounded shadow-sm" alt="Elegant Earrings 1">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="images/gallery2.jpg" class="img-fluid rounded shadow-sm" alt="Elegant Earrings 2">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="images/gallery3.jpg" class="img-fluid rounded shadow-sm" alt="Elegant Earrings 3">
-                    </div>
-                </div>
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Explore Our Collection</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery1.jpg" class="img-fluid rounded shadow-sm" alt="Elegant Earrings 1">
+                <h5 class="mt-2">Elegant Pearl Stud</h5>
+                <p>$49.99</p>
+                <button class="btn btn-success" onclick="addToCart('Elegant Pearl Stud', 49.99, 'images/gallery1.jpg')">
+                    Add to Cart
+                </button>
             </div>
-        </section>
+
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery2.jpg" class="img-fluid rounded shadow-sm" alt="Elegant Earrings 2">
+                <h5 class="mt-2">Diamond Classic Stud</h5>
+                <p>$79.99</p>
+                <button class="btn btn-success" onclick="addToCart('Diamond Classic Stud', 79.99, 'images/gallery2.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <img src="images/gallery3.jpg" class="img-fluid rounded shadow-sm" alt="Elegant Earrings 3">
+                <h5 class="mt-2">Rose Gold Stud</h5>
+                <p>$59.99</p>
+                <button class="btn btn-success" onclick="addToCart('Rose Gold Stud', 59.99, 'images/gallery3.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
        
      <!-- About Section -->
         <section id="about" class="about-section py-5">
@@ -112,5 +132,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
 </body>
 </html>

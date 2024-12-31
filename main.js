@@ -8,3 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Adjust Testimonial Carousel Interval
+document.addEventListener('DOMContentLoaded', () => {
+    const testimonialCarousel = document.querySelector('#testimonialCarousel');
+    if (testimonialCarousel) {
+        const carousel = new bootstrap.Carousel(testimonialCarousel, {
+            interval: 5000, // Change testimonial every 5 seconds
+            pause: 'hover'
+        });
+    }
+});

@@ -8,7 +8,7 @@ body {
 /* Full-Screen Landing Section */
 #landing {
     height: 100vh;
-    background: linear-gradient(to right, #1E90FF, #000000);
+    background: linear-gradient(to right, #238df7, #000000);
     color: #ffffff;
     text-align: center;
     position: relative;
@@ -21,6 +21,13 @@ body {
 
 #landing p {
     font-size: 1.2rem;
+}
+
+/* Centering the Image */
+.centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Smooth Scroll Behavior */
@@ -38,6 +45,12 @@ html {
     font-size: 1rem;
 }
 
+/* Gallery Section */
+.gallery-section img {
+    height: 250px;
+    object-fit: cover;
+}
+
 /* About Section */
 .about-section p {
     font-size: 1rem;
@@ -45,15 +58,20 @@ html {
     margin: auto;
 }
 
-/* Gallery Section */
-.gallery-section img {
-    height: 250px;
-    object-fit: cover;
+/* Testimonials Section */
+#testimonialCarousel {
+    max-width: 600px;
+    margin: auto;
 }
 
-/* Contact Section */
-.contact-section p {
-    font-size: 1rem;
+#testimonialCarousel p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Remove Carousel Indicators (Optional) */
+#testimonialCarousel .carousel-indicators {
+    display: none;
 }
 
 /* Footer */

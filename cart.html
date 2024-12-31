@@ -23,11 +23,25 @@
         </div>
     </nav>
 
-<!--Cart-->
-<h1 class="text-center mt-5">Shopping Cart</h1>
-<div class="container my-5">
-    <ul id="cart-items"></ul>
-    <p id="cart-total"></p>
-    <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
-</div>
-<script src="js/cart.js"></script>
+    <!-- Shopping Cart -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Your Shopping Cart</h1>
+        <div class="cart-container">
+            <div id="cart-items" class="list-group mb-4"></div>
+            <div class="text-end">
+                <h4 id="cart-total" class="fw-bold">Total: $0.00</h4>
+                <a href="checkout.html" class="btn btn-primary mt-3">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empty Cart Message -->
+    <div id="empty-cart" class="container text-center my-5 d-none">
+        <h4>Your cart is empty!</h4>
+        <a href="shop.html" class="btn btn-primary mt-3">Continue Shopping</a>
+    </div>
+
+    <script src="js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+// Simple Fade in animation
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.opacity = '1';
+});
+
 // Simple Alert Example for CTA Buttons
 document.addEventListener('DOMContentLoaded', () => {
     const ctaButtons = document.querySelectorAll('.btn-primary');

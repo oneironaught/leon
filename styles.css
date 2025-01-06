@@ -1,8 +1,33 @@
 /* General Styles */
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Full-Screen Landing Section */
@@ -14,7 +39,6 @@ body {
     position: relative;
     overflow: hidden;
     background: url('assets/images/earring_landing.jpg') center/cover no-repeat;
-
 }
 
 #landing h1 {
@@ -32,12 +56,12 @@ body {
     margin-right: auto;
 }
 
-/* Smooth Scroll Behavior */
-html {
-    scroll-behavior: smooth;
+/* Navbar Styling */
+
+.navbar-brand {
+    position: sticky;
 }
 
-/* Navbar Styling */
 .navbar-brand {
     color: #000000 !important;
     font-weight: bold;
@@ -80,6 +104,38 @@ html {
 .card img {
     height: 200px;
     object-fit: cover;
+}
+
+/* Center and Style Checkout Form */
+.checkout-form-container {
+    max-width: 400px; /* Limit the form width */
+    width: 90%; /* Ensure responsiveness */
+    background: #fff; /* White background for clarity */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Form Spacing and Alignment */
+.checkout-form-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.checkout-form-container .form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.checkout-form-container .form-control {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+.checkout-form-container .btn-success {
+    font-size: 1rem;
+    margin-top: 1rem;
 }
 
 /* Shopping Cart */
@@ -160,4 +216,23 @@ html {
 }
 .footer p {
     font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Social Icons Styling */
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Gold on Hover */
 }

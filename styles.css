@@ -39,21 +39,38 @@ main {
     position: relative;
     overflow: hidden;
     background: url('assets/images/earring_landing.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    padding-top: 5rem; /* Adjust vertical spacing */
+}
+
+
+/* Text Content Styling */
+.landing-content {
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 2rem; /* Adds space between text and image */
 }
 
 #landing h1 {
     font-size: 3rem;
+    margin-bottom: 20rem;
 }
 
 #landing p {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Centering the Image */
 .centered-img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 50%; /* Adjust the image size */
+    margin: 0 auto;
+    margin-top: auto; /* Push image to the bottom of the flex container */
+    z-index: 5;
 }
 
 /* Navbar Styling */

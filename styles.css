@@ -75,12 +75,13 @@ main {
 
 /* Navbar Styling */
 .navbar {
-    background-color: #0c5aa8 !important; /* Set background color */
+    background-color: rgba(12, 90, 168, 0.6) !important; /* Semi-transparent background */
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures navbar stays above other content */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-
+    z-index: 1000; /* Ensures navbar stays above content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    backdrop-filter: blur(5px); /* Optional: Adds a glassy effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Adds a subtle border */
 }
 
 /* Move Navbar Brand to the Far Left */
